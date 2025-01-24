@@ -1,6 +1,8 @@
 ## HOW TO DEPLOY REACTJS APPLICATION TO CPANEL
 Step 1: In the `public` directory create a `.htaccess` file. Add the following code
   ```apache
+//This configuration ensures that when users access sub-routes like /login, the server will serve index.html, and React Router will handle the routing logic.
+
       <IfModule mod_rewrite.c>
           RewriteEngine On
           RewriteBase /
