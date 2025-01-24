@@ -1,6 +1,6 @@
 ## HOW TO DEPLOY REACTJS APPLICATION TO CPANEL
 Step 1: In the `public` directory create a `.htaccess` file. Add the following code
-  ```batch
+  ```apache
       <IfModule mod_rewrite.c>
           RewriteEngine On
           RewriteBase /
