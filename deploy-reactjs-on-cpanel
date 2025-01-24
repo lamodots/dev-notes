@@ -1,0 +1,16 @@
+## HOW TO DEPLOY REACTJS APPLICATION TO CPANEL
+Step 1: In the `public` directory create a `.htaccess` file. Add the following code
+  ```batch
+      <IfModule mod_rewrite.c>
+          RewriteEngine On
+          RewriteBase /
+          RewriteRule ^index\.html$ - [L]
+          RewriteCond %{REQUEST_FILENAME} !-f
+          RewriteCond %{REQUEST_FILENAME} !-d
+          RewriteCond %{REQUEST_FILENAME} !-l
+          RewriteRule . /index.html [L]
+      </IfModule>
+
+  ```
+Step 1 : On your code editor build your react app , type `npm run build`.
+Step 2
