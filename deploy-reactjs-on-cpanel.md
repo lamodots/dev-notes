@@ -10,6 +10,7 @@ Step 1: In the `public` directory create a `.htaccess` file. Add the following c
           RewriteCond %{REQUEST_FILENAME} !-l
           RewriteRule . /index.html [L]
       </IfModule>
+```
 Step 2: Open `package.json` file and add a `homepage` property which will point to the domain where you will host your React app, as so `"homepage": "https://ksn.membersng.com/",`
 Step 3 : On your code editor build your react app , type `npm run build`.
 Step 4: Zip build file and upload to Cpanel.
